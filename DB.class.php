@@ -91,24 +91,16 @@
 			
 	}
 	
-
-	$DB = new DB(); // Start the class up
-	$DB->Connect('root','','testdb','localhost');  // Connect to the DB
-	$DB->Query("SELECT * FROM test"); 
-	
-	$data = array('Age' => rand(0,10), 'Date' => rand(0,22)); // Data for insert in associated array
-	echo $DB->Insert($data,"test"); 
-	$DB->Update($data,'CanUpdate','1','test');
 	/* Example Usage 
-	$DB = new DB_Management(); // Start the class up
-	$DB->Connect('djdclarke','titanic17','AgPlay','localhost');  // Connect to the DB
-	$DB->Query("SELECT * FROM permissions"); // Run a query (returns result)
-	$DB->Rowcount(); // Get the DB total row count (returns int) 
-	
-	$data = array('T1' => 'Test1', 'T2' => 'Test2','T3' => 'Test3'); // Data for insert in associated array
-	$DB->Insert($data,"Test"); // Insert with Data and table to insert to
-	
-	$DB->Update(DATA,'WHERE','VALUE','TABLE'); // T1 
+		$DB = new DB_Management(); // Start the class up
+		$DB->Connect('root','','testdb','localhost');  // Connect to the DB
+		$DB->Query("SELECT * FROM permissions"); // Run a query (returns result)
+		$DB->Rowcount(); // Get the DB total row count (returns int) 
+		
+		$data = array('T1' => 'Test1', 'T2' => 'Test2','T3' => 'Test3'); // Data for insert in associated array
+		$DB->Insert($data,"Test"); // Insert with Data and table to insert to
+		
+		$DB->Update(DATA,'WHERE','VALUE','TABLE'); // T1 
 	*/ 
 
 ?>
